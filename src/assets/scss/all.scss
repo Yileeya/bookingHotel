@@ -36,6 +36,9 @@
     z-index: 9999;
   }
 }
+.datepicker {
+  right: 0;
+}
 .datepicker__dummy-wrapper--is-active{
   border:     2px solid #D1B7A6 !important;
   box-shadow: 0 1px 1px rgba(209, 183, 166, 0.075) inset, 0 0 8px rgba(209, 183, 166, 0.6);
