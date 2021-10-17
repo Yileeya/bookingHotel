@@ -1,0 +1,88 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~fontawesome-4.7/css/font-awesome.css";
+@import "~swiper/dist/css/swiper.css";
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.row{
+  margin: 0;
+  color:  #565264;
+}
+.img-thumbnail{
+  width: 75%;
+}
+.img-thumbnail:hover{
+  transition:       0.25s;
+  background-color: #DABECA;;
+  opacity:          0.8;
+  cursor:           pointer;
+}
+.header-title{
+  color: #DABECA;
+  color: #A6808C;
+  color: #706677;
+  color: #565264;
+  margin:                    1em 0;
+  font-weight:               bold;
+  text-decoration:           underline;
+  text-decoration-color:     #DABECA;
+  text-decoration-thickness: 0.25em;
+}
+.modal-body{
+  margin: 0;
+}
+.modal-content{
+  background: transparent;
+}
+
+.navbar-nav{
+  float: none;
+}
+.navbar-nav > li {
+  float: none;
+}
+.navbar-nav > li> a:hover{
+  cursor: pointer;
+  background: #DABECA;
+  color: black!important;
+  opacity: 0.7;
+}
+//.navbar-nav > li> a:hover{
+//  background:  #DABECA;
+//}
+
+.swiper-button-prev{
+  background-image:none;
+}
+.swiper-button-next{
+  background-image:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+//  background-image: none;
+//  left: 0;
+//  right: 0;
+//}
+// .swiper-button-prev, .swiper-button-next {
+//   position: absolute;
+//   top: calc((100% - 70px) / 2);
+//   width: 0;
+//   height: initial;
+//   margin: initial;
+// }
