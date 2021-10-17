@@ -1,7 +1,7 @@
 <template>
     <div class="uiv">
         <navbar fixed-top>
-            <a class="navbar-brand" slot="brand" href="/">
+            <a class="navbar-brand" slot="brand" href="https://yileeya.github.io/bookingHotel/#/">
                 <i style="font-size: 1.3em;" class="fa fa-leaf" aria-hidden="true"></i>
                 <span style="font-size: 1.3em;"><i>Nature Space</i></span>
             </a>
