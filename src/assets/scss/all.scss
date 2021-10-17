@@ -31,12 +31,7 @@
   border-color: #D1B7A6;
   box-shadow:   0 1px 1px rgba(209, 183, 166, 0.075) inset, 0 0 8px rgba(209, 183, 166, 0.6);
 }
-@media screen and (max-width: 767px){
-  .datepicker--open {
-    z-index: 9999;
-  }
-}
-.datepicker {
+.datepicker{
   right: 0;
 }
 .datepicker__dummy-wrapper--is-active{
@@ -75,31 +70,32 @@
   background-color: rgba(209, 183, 166, 0.5) !important;
 }
 .datepicker--open{
-  margin: 0.5em 0;
+  margin:  0.5em 0;
+  z-index: 9999 !important;
 }
 .btn-success{
-  background: #DF8080!important;
-  cursor: not-allowed!important;
-  border-color: transparent!important;
+  background:   #DF8080 !important;
+  cursor:       not-allowed !important;
+  border-color: transparent !important;
 }
 .datepicker__tooltip{
   display: none;
 }
-.datepicker__month-day--halfCheckIn, .datepicker__month-day--halfCheckOut {
-  cursor: not-allowed;
+.datepicker__month-day--halfCheckIn, .datepicker__month-day--halfCheckOut{
+  cursor:         not-allowed;
   pointer-events: none;
-  font-weight: 400;
-  position: relative;
-  background: #f5f7f8!important;
+  font-weight:    400;
+  position:       relative;
+  background:     #f5f7f8 !important;
 }
-.datepicker__month-day--halfCheckIn span {
+.datepicker__month-day--halfCheckIn span{
   text-decoration: line-through;
 }
 .datepicker__month-day--halfCheckOut span{
   text-decoration: line-through;
 }
 .sub-title{
-  font-style: normal!important;
-  color: #666666!important;
+  font-style: normal !important;
+  color:      #666666 !important;
 }
 
