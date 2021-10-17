@@ -1,7 +1,7 @@
 <template>
     <div class="uiv">
         <navbar fixed-top>
-            <a class="navbar-brand" slot="brand" href="https://yileeya.github.io/bookingHotel/#/">
+            <a class="navbar-brand" slot="brand" @click="setNavTitle(null)">
                 <i style="font-size: 1.3em;" class="fa fa-leaf" aria-hidden="true"></i>
                 <span style="font-size: 1.3em;"><i>Nature Space</i></span>
             </a>
@@ -27,6 +27,10 @@
         },
         methods: {
             setNavTitle(title) {
+                if(!title){
+                    this.$router.push('/');
+                    return
+                }
                 this.$store.commit('NAVTITLE', title);
                 if(this.$route.path !== '/')
                     this.$router.push('/');
@@ -51,6 +55,9 @@
     }
     nav{
         margin: initial;
+    }
+    a{
+        cursor: pointer;
     }
     a:hover{
         color: #858585!important;
