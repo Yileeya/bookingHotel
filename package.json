@@ -8,8 +8,25 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.18.1",
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "font-awesome": "^4.7.0",
+    "fontawesome-4.7": "^4.7.0",
+    "jquery": "^3.2.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "moment-range": "^4.0.2",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^7.1.0",
+    "uiv": "^1.2.3",
+    "vue": "^2.6.11",
+    "vue-cool-lightbox": "^2.7.2",
+    "vue-hotel-datepicker2": "^1.0.6",
+    "vue-router": "^3.5.1",
+    "vue2-animate": "^2.1.4",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

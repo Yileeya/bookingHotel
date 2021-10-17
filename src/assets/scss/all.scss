@@ -1,88 +1,102 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~fontawesome-4.7/css/font-awesome.css";
-@import "~swiper/dist/css/swiper.css";
-
-body{
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
+@import "~vue2-animate/dist/vue2-animate.min.css";
 .row{
-  margin: 0;
-  color:  #565264;
+  margin:      0;
+  font-family: Palatino;
 }
-.img-thumbnail{
-  width: 75%;
+.room-pic{
+  background-position: center !important;
+  background-size:     cover !important;
 }
-.img-thumbnail:hover{
-  transition:       0.25s;
-  background-color: #DABECA;;
-  opacity:          0.8;
-  cursor:           pointer;
-}
-.header-title{
-  color: #DABECA;
-  color: #A6808C;
-  color: #706677;
-  color: #565264;
-  margin:                    1em 0;
-  font-weight:               bold;
-  text-decoration:           underline;
-  text-decoration-color:     #DABECA;
-  text-decoration-thickness: 0.25em;
-}
-.modal-body{
-  margin: 0;
-}
-.modal-content{
+.room-img-hover{
+  height:     100%;
   background: transparent;
 }
-
-.navbar-nav{
-  float: none;
+.room-img-hover:hover{
+  cursor:     pointer;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
 }
-.navbar-nav > li {
-  float: none;
+.form-control{
+  padding:       0.5em 1em;
+  border:        2px solid white;
+  border-radius: 1px;
+  margin:        1em 0;
+  height:        48px;
+  font-size:     16px;
+  box-shadow:    none;
 }
-.navbar-nav > li> a:hover{
-  cursor: pointer;
-  background: #DABECA;
-  color: black!important;
-  opacity: 0.7;
+.form-control:focus{
+  border-color: #D1B7A6;
+  box-shadow:   0 1px 1px rgba(209, 183, 166, 0.075) inset, 0 0 8px rgba(209, 183, 166, 0.6);
 }
-//.navbar-nav > li> a:hover{
-//  background:  #DABECA;
-//}
-
-.swiper-button-prev{
-  background-image:none;
+@media screen and (max-width: 767px){
+  .datepicker--open {
+    z-index: 9999;
+  }
 }
-.swiper-button-next{
-  background-image:none;
+.datepicker__dummy-wrapper--is-active{
+  border:     2px solid #D1B7A6 !important;
+  box-shadow: 0 1px 1px rgba(209, 183, 166, 0.075) inset, 0 0 8px rgba(209, 183, 166, 0.6);
+}
+.datepicker__input{
+  color:     #858585 !important;
+  font-size: 16px !important;
+}
+.datepicker__header{
+  padding: 0 !important;
+}
+.datepicker__month-button{
+  border-color: transparent !important;
+}
+.datepicker__inner, .datepicker__week-name, .datepicker__month-day{
+  color: #858585 !important;
+}
+.datepicker__month-day--today .datepicker__month-day-wrapper{
+  border: 2px solid #858585 !important;
+}
+.datepicker__month-day--selected{
+  background-color: rgba(209, 183, 166, 0.5) !important;
+}
+.datepicker__month-day--selected:hover{
+  background-color: rgba(209, 183, 166, 0.2) !important;
+}
+.datepicker__month-day--first-day-selected, .datepicker__month-day--last-day-selected{
+  background: rgba(209, 183, 166, 0.7) !important;
+}
+.datepicker__month-day--allowed-checkout:hover, .datepicker__month-day--valid:hover{
+  background-color: #F0ECE9 !important;
+}
+.datepicker__month-day--hovering{
+  background-color: rgba(209, 183, 166, 0.5) !important;
+}
+.datepicker--open{
+  margin: 0.5em 0;
+}
+.btn-success{
+  background: #DF8080!important;
+  cursor: not-allowed!important;
+  border-color: transparent!important;
+}
+.datepicker__tooltip{
+  display: none;
+}
+.datepicker__month-day--halfCheckIn, .datepicker__month-day--halfCheckOut {
+  cursor: not-allowed;
+  pointer-events: none;
+  font-weight: 400;
+  position: relative;
+  background: #f5f7f8!important;
+}
+.datepicker__month-day--halfCheckIn span {
+  text-decoration: line-through;
+}
+.datepicker__month-day--halfCheckOut span{
+  text-decoration: line-through;
+}
+.sub-title{
+  font-style: normal!important;
+  color: #666666!important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-//  background-image: none;
-//  left: 0;
-//  right: 0;
-//}
-// .swiper-button-prev, .swiper-button-next {
-//   position: absolute;
-//   top: calc((100% - 70px) / 2);
-//   width: 0;
-//   height: initial;
-//   margin: initial;
-// }
